@@ -509,7 +509,7 @@ A: Ensure PyQt5 is installed and check the logs for specific error messages.
 
 ### Phase 3: Enterprise Features 📋
 
-- [ ] Centralized management
+- [ ] Centralised management
 - [ ] SSO integration
 - [ ] Advanced analytics
 - [ ] Cloud deployment options
@@ -534,15 +534,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - OpenCV team for computer vision libraries
-- PyTorch team for deep learning framework
+- PyTorch team for a deep learning framework
 - Cryptography.io team for encryption libraries
 - All contributors and testers
 
 ## 📞 Support
 
 - 📧 Email: support@lockless.dev
-- 💬 Discord: [Join our community](https://discord.gg/lockless)
-- 📖 Documentation: [docs.lockless.dev](https://docs.lockless.dev)
+- 💬 Discord: [Join our community](https://discord.gg/BByDM7fZ)
+- 📖 Documentation: [docs.lockless.dev](https://github.com/SpicychieF05/LockLess/tree/main/docs)
 - 🐛 Issues: [GitHub Issues](https://github.com/SpicychieF05/LockLess/issues)
 
 ---
