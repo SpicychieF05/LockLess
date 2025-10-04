@@ -13,14 +13,14 @@ from dataclasses import dataclass
 from enum import Enum
 from concurrent.futures import ThreadPoolExecutor
 
-from ..core.logging import (get_logger, get_security_logger,
+from core.logging import (get_logger, get_security_logger,
                             SecurityEventType, PerformanceTimer)
-from ..core.exceptions import CameraError
-from ..security.encryption import SecureTemplateStorage
-from .face_detection import FaceDetector
-from .feature_extraction import FeatureExtractor
-from .quality_assessment import QualityAssessment
-from .liveness import LivenessDetector
+from core.exceptions import CameraError
+from security.encryption import SecureTemplateStorage
+from biometric.face_detection import FaceDetector
+from biometric.feature_extraction import FeatureExtractor
+from biometric.quality_assessment import QualityAssessment
+from biometric.liveness import LivenessDetector
 
 logger = get_logger(__name__)
 security_logger = get_security_logger()

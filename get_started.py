@@ -1,23 +1,7 @@
 #!/usr/bin/env python3
 """
 Interactive Getting Started Guide for Lockless
-This script provides step    if not run_command_interactive("python setup.py", "Install all dependencies and set up the environment"):
-        print("\nIf the automatic setup failed, you can try manual installation:")
-        print("1. python -m venv .venv")
-        print("2. .venv\\Scripts\\activate  (Windows) or source .venv/bin/activate (Linux)")
-        print("3. pip install -r requirements.txt")
-
-        manual = input("\nTry manual setup now? (y/n): ").lower().strip()
-        if manual == 'y':
-            print("\nManual setup steps:")
-            run_command_interactive(
-                "python -m venv .venv", "Create virtual environment")
-
-            # Activation command depends on platform
-            if os.name == 'nt':  # Windows
-                activate_cmd = ".venv\\Scripts\\activate && pip install -r requirements.txt"
-            else:  # Linux/Mac
-                activate_cmd = "source .venv/bin/activate && pip install -r requirements.txt" to run the system.
+This script provides step-by-step guidance to set up and test the system.
 """
 
 import os
@@ -69,7 +53,7 @@ def main():
     ╔══════════════════════════════════════════════════════════════╗
     ║                                                              ║
     ║          🔐 LOCKLESS BIOMETRIC AUTHENTICATION SYSTEM         ║
-    ║                   Interactive Setup Guide                   ║
+    ║                   Interactive Setup Guide                    ║
     ║                                                              ║
     ╚══════════════════════════════════════════════════════════════╝
     
