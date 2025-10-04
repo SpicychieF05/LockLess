@@ -13,8 +13,8 @@ try:
 except Exception:  # pragma: no cover - runtime dependency guard
     ort = None  # type: ignore[assignment]
 
-from ..core.logging import get_logger, PerformanceTimer
-from ..core.exceptions import ModelLoadError
+from core.logging import get_logger, PerformanceTimer
+from core.exceptions import ModelLoadError
 
 logger = get_logger(__name__)
 
