@@ -5,11 +5,11 @@ This module provides command-line interface and coordinates all system component
 for enrollment, authentication, and system management.
 """
 
-from src.core.logging import get_logger, get_security_logger, SecurityEventType
-from src.core.config import ConfigManager
-from src.biometric.enrollment import BiometricEnrollment, EnrollmentConfig
-from src.biometric.authentication import AuthenticationEngine, AuthenticationConfig
-from src.security.encryption import SecureTemplateStorage
+from core.logging import get_logger, get_security_logger, SecurityEventType
+from core.config import ConfigManager
+from biometric.enrollment import BiometricEnrollment, EnrollmentConfig
+from biometric.authentication import AuthenticationEngine, AuthenticationConfig
+from security.encryption import SecureTemplateStorage
 import argparse
 import sys
 import os
@@ -301,7 +301,7 @@ Examples:
             return 0 if success else 1
 
         elif args.gui:
-            from src.ui.app import run_gui  # Lazy import to avoid PyQt dependency unless needed
+            from ui.app import run_gui  # Lazy import to avoid PyQt dependency unless needed
 
             exit_code = run_gui(args.config)
             return exit_code
