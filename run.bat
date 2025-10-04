@@ -39,7 +39,3 @@ if errorlevel 1 (
     echo Command failed. Press any key to exit...
     pause >nul
 )
-    echo.
-    echo Command failed. Press any key to exit...
-    pause >nul
-)
