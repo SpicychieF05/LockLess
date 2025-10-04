@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 
-from ..core.logging import get_logger, PerformanceTimer
+from core.logging import get_logger, PerformanceTimer
 
 logger = get_logger(__name__)
 
