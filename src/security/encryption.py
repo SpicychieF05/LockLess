@@ -15,8 +15,8 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.backends import default_backend
 import base64
 
-from ..core.exceptions import EncryptionError, KeyDerivationError
-from ..core.logging import get_logger
+from core.exceptions import EncryptionError, KeyDerivationError
+from core.logging import get_logger
 
 logger = get_logger(__name__)
 
