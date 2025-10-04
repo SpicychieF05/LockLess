@@ -16,7 +16,7 @@ try:
 except Exception:  # pragma: no cover - runtime dependency guard
     ort = None  # type: ignore[assignment]
 
-from ..core.logging import (get_logger, get_security_logger,
+from core.logging import (get_logger, get_security_logger,
                             SecurityEventType, PerformanceTimer)
 
 logger = get_logger(__name__)
