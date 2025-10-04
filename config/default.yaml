@@ -1,0 +1,49 @@
+# Lockless Biometric Authentication System - Default Configuration
+
+system:
+  version: "1.0.0"
+  log_level: "INFO"
+  data_directory: "~/.lockless"
+
+camera:
+  device_id: 0
+  resolution:
+    width: 640
+    height: 480
+  fps: 30
+
+authentication:
+  similarity_threshold: 0.7
+  quality_threshold: 0.6
+  max_attempts: 3
+  lockout_duration: 300 # seconds
+  max_time: 10 # seconds
+
+enrollment:
+  required_samples: 5
+  quality_threshold: 0.4
+  max_enrollment_time: 30 # seconds
+
+security:
+  encryption_enabled: true
+  tpm_enabled: false # Set to true if TPM available
+  key_derivation_iterations: 100000
+
+performance:
+  max_authentication_time: 5000 # milliseconds
+  enable_gpu_acceleration: false
+  max_concurrent_users: 10
+
+# Liveness detection settings
+liveness:
+  enable_depth_analysis: true
+  enable_texture_analysis: true
+  enable_motion_analysis: true
+  liveness_threshold: 0.5
+
+# Quality assessment thresholds
+quality:
+  min_sharpness: 50.0
+  min_brightness: 50.0
+  min_contrast: 20.0
+  min_face_size: 50
