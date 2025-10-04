@@ -13,8 +13,8 @@ from typing import Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 
-from ..core.exceptions import KeyManagementError, TPMError
-from ..core.logging import get_logger
+from core.exceptions import KeyManagementError, TPMError
+from core.logging import get_logger
 
 logger = get_logger(__name__)
 
