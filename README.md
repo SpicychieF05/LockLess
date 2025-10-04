@@ -152,13 +152,13 @@ python src/main.py --benchmark
 ### System Components
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   User Interface │    │  Biometric Core │    │  Security Layer │
-│                 │    │                 │    │                 │
-│ • GUI (PyQt5)   │◄──►│ • Face Detection│◄──►│ • AES-256 Enc.  │
-│ • CLI Interface │    │ • Feature Ext.  │    │ • Key Management│
+┌─────────────────┐    ┌─────────────────┐    ┌──────────────────┐
+│  User Interface │    │  Biometric Core │    │  Security Layer  │
+│                 │    │                 │    │                  │
+│ • GUI (PyQt5)   │◄──►│ • Face Detection│◄──►│ • AES-256 Enc.   │
+│ • CLI Interface │    │ • Feature Ext.  │    │ • Key Management │
 │ • REST API      │    │ • Liveness Det. │    │ • TPM Integration│
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+└─────────────────┘    └─────────────────┘    └──────────────────┘
          │                       │                       │
          └───────────────────────┼───────────────────────┘
                                  │
