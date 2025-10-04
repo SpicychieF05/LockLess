@@ -11,11 +11,11 @@ from typing import Any, Dict, Optional
 
 import cv2
 
-from ..biometric.authentication import AuthenticationConfig, AuthenticationEngine
-from ..biometric.enrollment import BiometricEnrollment, EnrollmentConfig
-from ..core.config import ConfigManager
-from ..core.logging import get_logger
-from ..security.encryption import SecureTemplateStorage
+from biometric.authentication import AuthenticationConfig, AuthenticationEngine
+from biometric.enrollment import BiometricEnrollment, EnrollmentConfig
+from core.config import ConfigManager
+from core.logging import get_logger
+from security.encryption import SecureTemplateStorage
 
 logger = get_logger(__name__)
 
